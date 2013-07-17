@@ -514,7 +514,6 @@ bool CWsDfuXRefEx::onDFUXRefList(IEspContext &context, IEspDFUXRefListRequest &r
 inline const char *skipTilda(const char *lfn) //just in case
 {
     if (lfn)
-        while (*lfn && *lfn == '~' || *lfn == ' ')
         while (*lfn &&( *lfn == '~' || *lfn == ' '))
             lfn++;
     return lfn;
